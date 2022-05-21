@@ -9,4 +9,10 @@ Sorting is the process of rearranging the items in a collection (e.g. an array) 
 
 ## Bubble Sort
 A sorting algorithm where the largest values bubble up to the top!
-**BigO:** O(n)
+
+**BigO:** O(n^2)
+
+## Selection Sort
+Similar to bubble sort, but instead of first placing large values into sorted positions, it places smalll values into sorted position.
+
+**BigO:** O(n^2)
