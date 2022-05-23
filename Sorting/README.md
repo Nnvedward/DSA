@@ -7,12 +7,20 @@ Sorting is the process of rearranging the items in a collection (e.g. an array) 
 * There are many different ways to sort things, and different techniques have their own advantages and disadvantages.
 * Sorting sometimes has quirks, so it's good to understand how to navigate them 
 
-## Bubble Sort
+### Bubble Sort
 A sorting algorithm where the largest values bubble up to the top!
 
-**BigO:** O(n^2)
 
-## Selection Sort
+### Selection Sort
 Similar to bubble sort, but instead of first placing large values into sorted positions, it places smalll values into sorted position.
 
-**BigO:** O(n^2)
+
+### Insertion Sort
+It builds up the sort by gradually creating a larger left half which is always sorted.
+
+
+| Algorithm | Time complexity (Best) | Time complexity (Average) | Time complexity (Worst) | Space complexity |
+|-----------|------------------------|---------------------------|-------------------------|------------------|
+| Bubble Sort | O(n)                 | O(n^2)                    | O(n^2)                  | O(1)           |   
+| Insertion Sort | O(n)                 | O(n^2)                    | O(n^2)                  | O(1)           |   
+| Selection Sort | O(n^2)                 | O(n^2)                    | O(n^2)                  | O(1)           |   
