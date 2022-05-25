@@ -35,3 +35,13 @@ It builds up the sort by gradually creating a larger left half which is always s
 | Algorithm | Time complexity (Best) | Time complexity (Average) | Time complexity (Worst) | Space complexity |
 |-----------|------------------------|---------------------------|-------------------------|------------------|
 | Merge Sort| O(n log n)             | O(n log n)                | O(n log n)              | O(n)             |   
+
+### Quick Sort
+
+* Like merge sort, exploits the fact that arrays of 0 or 1 element are always sorted.
+* Works by selecting one element (called the "pivot") and finding the index where the pivot should end up in the array.
+* Once the pivot is positioned appropriately, quick sort can be applied on either side of the pivot.
+
+| Algorithm | Time complexity (Best) | Time complexity (Average) | Time complexity (Worst) | Space complexity |
+|-----------|------------------------|---------------------------|-------------------------|------------------|
+| Quick Sort| O(n log n)             | O(n log n)                | O(n^2)              | O(log n)             | 
