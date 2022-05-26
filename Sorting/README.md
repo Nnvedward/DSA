@@ -45,3 +45,16 @@ It builds up the sort by gradually creating a larger left half which is always s
 | Algorithm | Time complexity (Best) | Time complexity (Average) | Time complexity (Worst) | Space complexity |
 |-----------|------------------------|---------------------------|-------------------------|------------------|
 | Quick Sort| O(n log n)             | O(n log n)                | O(n^2)              | O(log n)             | 
+
+### Radix Sort
+* Radix sort is a special algorithm that works on lists of numbers.
+* It never makes comparisms between elements!
+* It exploits the fact that information about the size of a number is encoded in the number of digits.
+* More digits means a bigger number!
+
+| Algorithm | Time complexity (Best) | Time complexity (Average) | Time complexity (Worst) | Space complexity |
+|-----------|------------------------|---------------------------|-------------------------|------------------|
+| Radix Sort|      O(nk)             |      O(nk)                |      O(nk)              | O(n + k)         | 
+
+* n - Length of array
+* k - Number of digits(average)
