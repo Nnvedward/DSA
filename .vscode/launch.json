@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\Searching-Algorithms\\naiveStringSearch.js"
+            "program": "${workspaceFolder}\\Data-Structures\\singlyLinkedList.js"
         }
     ]
 }
