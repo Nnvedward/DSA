@@ -27,7 +27,7 @@ class SinglyLinkedList {
         if (!this.head) return undefined
         let current = this.head
         let newTail = current
-        while(current.next) {
+        while (current.next) {
             newTail = current
             current = current.next
         }
@@ -67,7 +67,7 @@ class SinglyLinkedList {
         if (index < 0 || index >= this.length) return null
         let counter = 0
         let current = this.head
-        while(counter !== index) {
+        while (counter !== index) {
             current = current.next
             counter++
         }
@@ -75,11 +75,68 @@ class SinglyLinkedList {
     }
     set(index, val) {
         let foundNode = this.get(index)
-        if (foundNode) { 
+        if (foundNode) {
             foundNode.val = val
             return true
         }
         return false
+    }
+    insert(index, val) {
+        if (index < 0 || index > this.length) return false
+
+        if (index === this.length) {
+            this.push(val)
+            return true
+        }
+
+        if (index === 0) {
+            this.unShift(val)
+            return true
+        }
+        else {
+            const newNode = new Node(val)
+            let prev = this.get(index - 1)
+            let temp = prev.next
+            prev.next = newNode
+            newNode.next = temp
+            this.length++
+            return true
+        }
+    }
+    remove(index) {
+        if (index < 0 || index >= this.length) return undefined
+        if (index === this.length - 1) return this.pop()
+        if (index === 0) return this.shift()
+
+        let prev = this.get(index - 1)
+        let removed = prev.next
+        prev.next = removed.next
+        this.length--
+        return removed
+    }
+    print() {
+        let arr = []
+        let current = this.head
+        while(current) {
+            arr.push(current.val)
+            current = current.next
+        }
+        console.log(arr)
+    }
+    reverse() {
+        let current = this.head
+        this.head = this.tail
+        this.tail = current
+        let next
+        let prev = null
+
+        for(let i = 0; i < this.length; i++) {
+            next = current.next
+            current.next = prev
+            prev = current
+            current = next
+        }
+        return this
     }
 }
 
@@ -88,4 +145,3 @@ list.push("Hi")
 list.push("Hello")
 list.push("GOODBYE")
 list.push("!")
-list.set(3, "Prime")

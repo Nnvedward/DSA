@@ -11,3 +11,9 @@ Comparisons with arrays:
 | Do not have indexes!                                       | Indexed in order!                               |
 | Connected via nodes with a **next** pointer                | Insertion and deletion canbe expensive          |
 | Random access is not allowed                               | Can quickly be accessed at a specific index     |
+
+### Big O of singly linked lists
+* Insertion - **O(1)**
+* Removal - it depends... **O(1)** or **O(N)**
+* Searching - **O(N)**
+* Access - **O(N)**
