@@ -20,3 +20,9 @@ Comparisons with arrays:
 
 ## Doubly linked list
 **Almost** identical to singly linked lists, except every node has **another** pointer, to the **previous** node.
+
+### Big O of doubly linked lists
+* Insertion - **O(1)**
+* Removal - **O(1)**
+* Searching - **O(N)**
+* Access - **O(N)**
