@@ -87,10 +87,17 @@ class DoublyLinkedList {
         }
         return current
     }
+    set(index, val) {
+        let foundNode = this.get(index)
+        if (foundNode !== null) {
+            foundNode.val = val
+            return true
+        }
+        return false
+    }
 }
 
 const list = new DoublyLinkedList()
 list.push('Hi')
 list.push('Hello')
 list.push('Goodbye')
-list.get(1)
