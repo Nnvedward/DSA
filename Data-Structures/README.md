@@ -27,4 +27,3 @@ Comparisons with arrays:
 * Searching - **O(N)**
 * Access - **O(N)**
 
-.
