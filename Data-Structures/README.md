@@ -26,3 +26,7 @@ Comparisons with arrays:
 * Removal - **O(1)**
 * Searching - **O(N)**
 * Access - **O(N)**
+
+## Stack
+A collection of data where the last element added in becomes the first to be removed.
+> Used to manage function invocations.
