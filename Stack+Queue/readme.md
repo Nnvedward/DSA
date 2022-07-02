@@ -8,3 +8,7 @@
 * Removal - O(1)
 * Searching - O(N)
 * Access - O(N)
+
+## Queue
+* Queue is a **FIFO** data structure where the first value in is always the first one out.
+* Uses cases: Background tasks, uploading resourses, printing/task processing
