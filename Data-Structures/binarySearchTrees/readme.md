@@ -21,6 +21,7 @@ A data structre that consists of nodes in a **parent/child** relationship.
 
 
 ### Binary Search Trees
+* Works for sorted data.
 * Every parent node has at most **two** children.
 * Every node to the left of the parent node is **always less** than the parent.
 * Every node to the right of the parent node is **always greater** than the parent.
