@@ -43,11 +43,11 @@ class Tree {
             queue = []
         queue.push(node)
 
-        while(queue.length) {
+        while (queue.length) {
             node = queue.shift()
             data.push(node.value)
-            if(node.left) queue.push(node.left)
-            if(node.right) queue.push(node.right)
+            if (node.left) queue.push(node.left)
+            if (node.right) queue.push(node.right)
         }
         return data
     }
@@ -62,14 +62,24 @@ class Tree {
         return data
     }
     DFSPostOrder() {
-      let data = []
-      function traverse(node) {
-        if (node.left) traverse(node.left)
-        if (node.right) traverse(node.right)
-        data.push(node.value)
-      }   
-      traverse(this.root)
-      return data
+        let data = []
+        function traverse(node) {
+            if (node.left) traverse(node.left)
+            if (node.right) traverse(node.right)
+            data.push(node.value)
+        }
+        traverse(this.root)
+        return data
+    }
+    DSFInOrder() {
+        let data = []
+        function traverse(node) {
+            if (node.left) traverse(node.left)
+            data.push(node.value)
+            if (node.right) traverse(node.right)
+        }
+        traverse(this.root)
+        return data
     }
 }
 let tree = new Tree()
