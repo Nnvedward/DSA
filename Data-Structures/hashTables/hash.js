@@ -1,5 +1,5 @@
 // Hash function
-function hash(key, arraylen) {
+function _hash(key, arraylen) {
     let total = 0
     let PRIME = 31
     for (let i = 0; i < Math.min(key.length, 100); i++) {
@@ -11,4 +11,20 @@ function hash(key, arraylen) {
     return total
 }
 
-console.log(hash("prime", 13))
+// Hash Table
+class HashTable {
+    constructor(size = 53) {
+        this.keyMap = new Array(size)
+    }
+
+    hash(key) {
+        let total = 0
+        let PRIME = 31
+        for (let i = 0; i < Math.min(key.length, 100); i++) {
+            let char = key[i]
+            let value = char.charCodeAt(0) - 96
+            total = (total * PRIME + value) % this.keyMap.length
+        }
+        return total
+    }
+}
