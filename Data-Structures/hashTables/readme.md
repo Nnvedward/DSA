@@ -11,3 +11,8 @@
 **Handling collision**
 - Separate Chaining: At each index in our array we store values using a more sophisticated data structure (e.g. an array or a linked list). This allows us to store multiple key-value pairs at the same index.
 - Linear Probing: When we find a collision, we search through the array to find the next empty slot.
+
+### Big O of Hash Tables
+* Insert: O(1)
+* Deletion: O(1)
+* Access: O(1)
