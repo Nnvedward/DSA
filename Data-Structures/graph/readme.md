@@ -8,3 +8,9 @@ A **graph data structure** consits of a finite (and possibly mutable) set of ver
 * Visual Hierachy
 * File System Optimizations
 * **EVERYWHERE!**
+
+**Essencial graph terms**
+* **Vertex** - a node
+* **Edge** - connection between nodes
+* **Weighted/Unweighted** - values assigned to distances between vertices
+* **Directed/Undirected** - directions assigned to distances between vertices
