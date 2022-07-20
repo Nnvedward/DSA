@@ -1,4 +1,4 @@
-### Graphs
+## Graphs
 A **graph data structure** consits of a finite (and possibly mutable) set of vertices or nodes or points, together with a set of unordered pairs of these vertices for an undirected **graph** or a set of ordered pairs for a directed **graph**.
 
 ### Uses for graph
@@ -22,3 +22,9 @@ A **graph data structure** consits of a finite (and possibly mutable) set of ver
 | Can take up less space (in sparse graphs) | Takes up more space (in sparse graphs) |
 | Faster to iterate over all edges | Slower to iterate over all edges |
 | Can be slower to lookup specific edge | Faster to lookup specific edge |
+
+### Graph Traversal Uses
+* Peer to peer networking
+* Web crawlers
+* Finding "Closest" matches/recommendations
+* Shortest path problems: GPS Navigation, Solving mazes, AI (shorting path to win the game)
