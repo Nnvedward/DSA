@@ -66,6 +66,26 @@ class Graph {
         }
         return result
     }
+    breadthFirst(start) {
+        const queue = [start]
+        const result = []
+        const visited = {}
+        let currentVertex
+        visited[start] = true
+
+        while(queue.length) {
+            currentVertex = queue.shift()
+            result.push(currentVertex)
+
+            this.adjacencyList[currentVertex].forEach(neighbor => {
+                if(!visited[neighbor]) {
+                    visited[neighbor] = true
+                    queue.push(neighbor)
+                }
+            })
+        }
+        return result
+    }
 }
 
 let graph = new Graph()
@@ -82,4 +102,4 @@ graph.addEdge('C', 'E')
 graph.addEdge('D', 'E')
 graph.addEdge('D', 'F')
 graph.addEdge('E', 'F')
-graph.depthFirstRecursive('A')
+graph.breadthFirst('A')
