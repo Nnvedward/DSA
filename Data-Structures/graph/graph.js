@@ -29,15 +29,25 @@ class Graph {
     }
 }
 
-let graph = new Graph()
-graph.addVertex('Tokyo')
-graph.addVertex('Nairobi')
-graph.addVertex('Oslo')
-graph.addVertex('Denver')
-graph.addVertex('Rio')
-graph.addEdge('Nairobi', 'Tokyo')
-graph.addEdge('Nairobi', 'Oslo')
-graph.addEdge('Denver', 'Rio')
-graph.addEdge('Oslo', 'Denver')
-graph.addEdge('Rio', 'Nairobi')
-graph.removeVertex('Nairobi')
+// Weighted Graph 
+
+class WeightedGraph {
+    constructor() {
+        this.adjacencyList = {}
+    }
+    addVertex(vertex) {
+       if (!this.adjacencyList[vertex]) this.adjacencyList[vertex] = []
+    }
+    addEdge(vertex1, vertex2, weight) {
+        this.adjacencyList[vertex1].push({node: vertex2, weight})
+        this.adjacencyList[vertex2].push({node: vertex1, weight})
+    }
+}
+
+let weightedGraph = new WeightedGraph()
+weightedGraph.addVertex('A')
+weightedGraph.addVertex('B')
+weightedGraph.addVertex('C')
+weightedGraph.addEdge('A', 'B', 4)
+weightedGraph.addEdge('A', 'C', 6)
+weightedGraph.addEdge('B', 'C', 10)
