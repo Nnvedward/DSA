@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\Data-Structures\\graph\\graph.js"
+            "program": "${workspaceFolder}\\Data-Structures\\dijkstra's-Algorithm\\dijkstra.js"
         }
     ]
 }
